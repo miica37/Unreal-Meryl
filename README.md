@@ -1,2 +1,2 @@
-# Shenya Documentation
-Documentation for Shenya to be hosted on readthedocs.org
+# Meryl Documentation
+Documentation for Meryl to be hosted on readthedocs.org

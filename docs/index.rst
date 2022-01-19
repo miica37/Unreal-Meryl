@@ -62,6 +62,7 @@ Note that the eyes (and eyes shadow) is oval in shape.
 .. image:: /images/non-spherical-eyes-02.jpg
 	:align: center
 
+
 Eyes motion can be driven through morph targets in Unreal Engine.
 
 .. image:: /images/blendshapes-driven-eye-motion.jpg
@@ -83,15 +84,18 @@ The folder "BottomsExtraBones" contains mesh, skeleton, physic asset and animati
 .. image:: /images/bottoms-extra-bones.jpg
 	:align: center
 
+
 The mesh is skinned to some extra bones:
 
 .. image:: /images/bottoms-extra-bones2.jpg
 	:align: center
 
+
 I have also setup some physics box and capsules
 
 .. image:: /images/bottoms-extra-bones3.jpg
 	:align: center
+
 
 I have created a simple blueprint setup to test the physics skirt:
 
@@ -99,6 +103,7 @@ BP_Meryl_Modular_EXB_Bottoms (EXB = Extra Bones)
 
 .. image:: /images/bottoms-extra-bones-blueprint.jpg
 	:align: center
+
 
 Unfortunately, I couldn't get the setup to work properly at the moment so it is just there in case you need bones for the skirt.
 
@@ -109,13 +114,13 @@ Unfortunately, I couldn't get the setup to work properly at the moment so it is 
 
 Corrective Morph Targets
 ========================
-
 If you need a pose for the character to sit down, there might be some issues because the skirt is very short and skinned to the thigh bones, it will looks akward and unnatural. 
 
 With Cloth simulation ON:
 
 .. image:: /images/sit1.jpg
 	:align: center
+
 
 Turn Off Cloth Simulation:
 
@@ -125,6 +130,7 @@ Turn Off Cloth Simulation:
 
 .. image:: /images/sit2.jpg
 	:align: center
+
 
 I created a sit_corrective morph target to make it looks a bit better.
 

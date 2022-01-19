@@ -1,0 +1,9 @@
+docs/_build
+docs/_templates
+docs/images/psd
+docs/images/changelog/
+make.bat
+Makefile
+*.sublime-project
+*.sublime-workspace
+*.lnk

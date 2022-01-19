@@ -1,0 +1,76 @@
+/*
+
+   Following codes are taken from Blender Manual
+    -https://docs.blender.org/manual/en/dev/index.html
+
+*/
+
+/*boxed paragraphs*/
+.rst-content .refbox .admonition-title {background-color: #bbb}
+.rst-content .refbox {
+	-webkit-font-smoothing: antialiased;
+	background-color: #e3e3e3;
+	line-height: 24px;
+	margin-bottom: 24px; padding: 12px;
+    font-size:14px;
+}
+.rst-content .seealso .admonition-title {background-color: #7a87e6}
+.rst-content .seealso {background-color: #e7ebfa}
+.rst-content .important .admonition-title {background-color: #ddca3b}
+.rst-content .important {background-color: #f6f3a5}
+
+/* my edit */
+.rst-content .hint .admonition-title {background-color: #eeffcc; display: none;}
+.rst-content .hint {background-color: #eeffcc; border: 1px solid #e1e4e5;}
+
+/* refbox =, seealso ( > ), note ( i ), tip i , hint (+), warn / ! \ */
+.refbox .admonition-title::before {content:"\f00b"}
+.seealso .admonition-title::before{content:"\f138"}
+.note .admonition-title::before{content:"\f05a"}
+.tip .admonition-title::before{content:"\f129"; width: 0.75em; text-align: center}
+.hint .admonition-title::before{content:"\f055"}
+.warning .admonition-title::before{content:"\f071"}
+
+/* refbox field */
+.refbox .field-list .field-name, .refbox .field-list .field-body {
+	padding: 0px;
+}
+.refbox .field-name {font-weight: normal}
+
+/*
+   For Characters Documentation
+*/
+
+/* folder representation */
+
+.folder
+{
+    background-color: #ffe791;
+    border: none;
+    color: #333333;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+/* smaller texts */
+
+.special
+{
+    font-size: 80%;
+}
+
+.tab
+{
+    font-size: 80%;
+    padding-left: 25px;
+    margin-top: -20px;
+}

@@ -112,6 +112,28 @@ Unfortunately, I couldn't get the setup to work properly at the moment so it is 
 
 |
 
+List of Extra Bones for the alternate Skeleton
+==============================================
+
+* Note that the main skeleton doesn't have any extra bones, this is an alternate skeleton for the bottoms mesh.
+
+
+.. image:: /images/bottoms-extra-bones-list.jpg
+	:align: center
+
+* skirtFront_01_l, skirtFront_02_l, skirtFront_03_l
+* skirtFront_01_r, skirtFront_02_r, skirtFront_03_r
+* skirtSide_01_l, skirtSide_02_l, skirtSide_03_l
+* skirtSide_01_r, skirtSide_02_r, skirtSide_03_r
+* skirtBack_01_l, skirtBack_02_l, skirtBack_03_l
+* skirtBack_01_r, skirtBack_02_r, skirtBack_03_r
+* skirtBetwFront_01_l, skirtBetwFront_02_l, skirtBetwFront_03_l
+* skirtBetwFront_01_r, skirtBetwFront_02_r, skirtBetwFront_03_r
+* skirtBetwBack_01_l, skirtBetwBack_02_l, skirtBetwBack_03_l
+* skirtBetwBack_01_r, skirtBetwBack_02_r, skirtBetwBack_03_r
+
+|
+
 Corrective Morph Targets
 ========================
 If you need a pose for the character to sit down, there might be some issues because the skirt is very short and skinned to the thigh bones, it will looks akward and unnatural. 

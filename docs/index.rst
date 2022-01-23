@@ -58,10 +58,12 @@ Note that the eyes (and eyes shadow) is oval in shape.
 .. image:: /images/non-spherical-eyes-01.jpg
 	:align: center
 
+|
 
 .. image:: /images/non-spherical-eyes-02.jpg
 	:align: center
 
+|
 
 Eyes motion can be driven through morph targets in Unreal Engine.
 
@@ -84,12 +86,14 @@ The folder "BottomsExtraBones" contains mesh, skeleton, physic asset and animati
 .. image:: /images/bottoms-extra-bones.jpg
 	:align: center
 
+|
 
 The mesh is skinned to some extra bones:
 
 .. image:: /images/bottoms-extra-bones2.jpg
 	:align: center
 
+|
 
 I have also setup some physics box and capsules
 
@@ -104,6 +108,7 @@ BP_Meryl_Modular_EXB_Bottoms (EXB = Extra Bones)
 .. image:: /images/bottoms-extra-bones-blueprint.jpg
 	:align: center
 
+|
 
 Unfortunately, I couldn't get the setup to work properly at the moment so it is just there in case you need bones for the skirt.
 
@@ -120,6 +125,8 @@ List of Extra Bones for the alternate Skeleton
 
 .. image:: /images/bottoms-extra-bones-list.jpg
 	:align: center
+
+|
 
 * skirtFront_01_l, skirtFront_02_l, skirtFront_03_l
 * skirtFront_01_r, skirtFront_02_r, skirtFront_03_r
@@ -143,16 +150,17 @@ With Cloth simulation ON:
 .. image:: /images/sit1.jpg
 	:align: center
 
+|
 
 Turn Off Cloth Simulation:
 
 .. image:: /images/turn-off-cloth-simulation.jpg
 	:align: center
 
-
 .. image:: /images/sit2.jpg
 	:align: center
 
+|
 
 I created a sit_corrective morph target to make it looks a bit better.
 

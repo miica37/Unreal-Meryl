@@ -100,6 +100,7 @@ I have also setup some physics box and capsules
 .. image:: /images/bottoms-extra-bones3.jpg
 	:align: center
 
+|
 
 I have created a simple blueprint setup to test the physics skirt:
 
@@ -156,6 +157,8 @@ Turn Off Cloth Simulation:
 
 .. image:: /images/turn-off-cloth-simulation.jpg
 	:align: center
+
+|
 
 .. image:: /images/sit2.jpg
 	:align: center

@@ -8,10 +8,6 @@ Meryl
 
 Some notes about the character Meryl on Unreal Engine Marketplace.
 
-
-.. rst-class:: special
-	For more images, please check out at this page `Shenya <https://rabbit-heart.my/portfolio/shenya/>`_
-
 .. image:: /images/Meryl-cover.jpg
 	:align: center
 
@@ -47,6 +43,37 @@ Polycount
 +---------------+-------+
 | ---Total---   | 64453 |
 +---------------+-------+
+
+|
+
+Retargeting Animations
+======================
+
+Step1: 
+
+ - Select the animations that you want to retarget from
+ 
+ - Right click on them and choose *Retarget Anim Assets -> Duplicate Anim Assets and Retarget*
+
+.. image:: /images/retarget-step1.jpg
+	:align: center
+
+|
+
+Step2: 
+
+ - In the "Select Skeleton" pop up Window...
+ 
+ - Uncheck "Show Only Compatible Skeletons"
+ 
+ - Select SK_Meryl_Skeleton
+ 
+ - Change the output location if you want
+
+ - Click on Retarget.
+
+.. image:: /images/retarget-step2.jpg
+	:align: center
 
 |
 
@@ -170,3 +197,32 @@ I created a sit_corrective morph target to make it looks a bit better.
 .. image:: /images/sit-corrective-morph-target.jpg
 	:align: center
 
+|
+
+Updates Log
+===========
+
+
+1.03 (0?/04/2022)
+--------------------
+
+ * Fix Physics
+
+ * Updated Eyes Material (M_Eyes_Master and MI_Meryl_Eyes)
+
+|
+
+
+1.02 (09/03/2022)
+--------------------
+
+ * Fix Animation: Anim_smile_blink
+
+ * Added new skeletal mesh: SK_Meryl_no_hat
+
+|
+
+1.01 (07/03/2022)
+--------------------
+
+ * Fix missing blendshapes in SK_Meryl_Head

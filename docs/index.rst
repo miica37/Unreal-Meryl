@@ -49,6 +49,8 @@ Polycount
 Retargeting Animations
 ======================
 
+Short Video Demonstration\: `Animation Retargeting in UE4 - Using Meryl as Example <https://www.youtube.com/watch?v=EqlSjc5xunU>`_ (Youtube)
+
 Step1: 
 
  - Select the animations that you want to retarget from
@@ -203,12 +205,15 @@ Updates Log
 ===========
 
 
-1.03 (0?/04/2022)
+1.03 (11/04/2022)
 --------------------
 
- * Fix Physics
+ * Fix (improved slightly) Physics Asset (SK_Meryl_PhysicsAsset)
 
- * Updated Eyes Material (M_Eyes_Master and MI_Meryl_Eyes)
+ * Eyes color adjustable (Added T_Meryl_Eyes_Mask, and Updated M_Eyes_Master)
+
+.. image:: /images/changelog/v1.03/adjustable-eyes-color.gif
+	:align: center
 
 |
 

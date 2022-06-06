@@ -204,6 +204,13 @@ I created a sit_corrective morph target to make it looks a bit better.
 Updates Log
 ===========
 
+1.04 (07/06/2022)
+--------------------
+
+ * Fix incorrect position of IK bones
+
+|
+
 
 1.03 (11/04/2022)
 --------------------

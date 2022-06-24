@@ -37,6 +37,15 @@
 }
 .refbox .field-name {font-weight: normal}
 
+.refbox dd p {
+    font-size: 0.9em;
+}
+
+.document .material {
+    color: #2980b9;
+    font-weight: bold;
+}
+
 /*
    For Characters Documentation
 */

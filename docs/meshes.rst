@@ -143,6 +143,8 @@ The amount of material slots is reduced to 4. This is the minimum amount of mate
 .. image:: /images/meshes/meryl1c-material-slots.jpg
 	:align: center
 
+|
+
 .. note::
     A note on the eyes for 1c, it seems at first that we can also merge the eyes into the master clothes material to reduce one more material slot, but somehow the eyes turned black when I did this, so I had to separate the eyes out.
 

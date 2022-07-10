@@ -105,6 +105,8 @@ One thing I noticed when opening the preview map in UE5 (and also UE4.27) is it 
 .. image:: /images/ue5/ue5-after.jpg
     :align: center
 
+|
+
 .. note::
     :ref:`Retargeting Guide for UE5 <retarget_ue5>`
 

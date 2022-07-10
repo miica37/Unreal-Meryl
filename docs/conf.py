@@ -42,7 +42,7 @@ release = u''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinxemoji",
+    "sphinxemoji.sphinxemoji",
     "sphinx.ext.autosectionlabel",
 ]
 
@@ -221,7 +221,9 @@ def ultimateReplace(app, docname, source):
 
 ultimate_replacements = {
     "< " : ":guilabel:`",
-    " >" : "`"
+    " >" : "`",
+    "[ " : ":material2:`",
+    " ]" : "`"
 }
 
 def setup(app):

@@ -3,15 +3,26 @@
 Dynamic Bones
 ###############################
 
+.. role:: folder
+
+.. _dynamics:
 
 Dynamic Folders
 ===============
-Inside the < Meshes > folder, there are subfolders named < xxxxx_Dynamic >. These are some meshes with their own set of skeletons that contains extra bones for dynamic simulation.
 
-The folder also contains a very simple animation blueprint. The animation blueprint is used inside BP_Meryl_Modular_xxxxx_Dynamics blueprint so the main bones (head or pelvis bones) are following the main skeleton. The technique is described in UE's Documentation: `Working with Modular Characters <https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/WorkingwithModularCharacters/>`_
-
-.. image:: /images/dynamics/skirt1-dynamic-folder.png
+.. image:: /images/dynamics/skirt1-dynamic-folder.jpg
 	:align: center
+
+Inside the :folder:`Meryl\\Meshes\\xxxxx_Dynamic` subfolders are meshes with their special skeletons that have extra bones for dynamic simulation.
+
+The folder also contains a simple animation blueprint which is used by < BP_Meryl_Modular_xxxxx_Dynamics > (:ref:`character blueprints <content_dynamics_blueprints>`) from the :folder:`Meryl\\Blueprints` folder, following techniques as described in UE's Documentation: `Working with Modular Characters <https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/WorkingwithModularCharacters/>`_
+
+.. note::
+	These dynamic assets are work in progress, in the future I will test with skeletons that don't include body skeleton, so you can combine for example the extra hair bones with the extra skirt bones.
+
+	For now, the setup I have is very unstable and not very usable which is why I resort to cloth simulation.
+
+	The development for this is also lacking but I will study this more to provide a better solution, any help will be great and much appreciated.
 
 |
 
@@ -29,9 +40,11 @@ Physics Asset setup:
 
 |
 
+.. _content_dynamics_blueprints:
+
 I have created a simple blueprint setup to test the physics skirt and hair4:
 
-.. image:: /images/dynamics/dynamic-bones-blueprints.jpg
+.. image:: /images/dynamics/content-dynamic-blueprints.jpg
 	:align: center
 
 |
@@ -79,3 +92,5 @@ Hair4_Dynamic
 
 .. image:: /images/dynamics/hair4-extra-bones-list.jpg
 	:align: center
+
+|

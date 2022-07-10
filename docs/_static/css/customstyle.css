@@ -41,9 +41,33 @@
     font-size: 0.9em;
 }
 
+
+.document a {
+    color: #0aaff1;
+}
+
 .document .material {
     color: #2980b9;
     font-weight: bold;
+}
+
+.document .material2 {
+    color: #2980b9;
+    font-weight: bold;
+    border: 1px solid #dadddd;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+kbd {
+	font-family:"Source Code Pro",monospace;
+	font-size:1em
+	color:#212121;
+	background-color:#f2f2f2;
+	border-radius:.2rem;
+	border:1px solid #cbcbcb;
+	padding:.2rem .4rem;
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),inset 0 0 0 2px #fff;
 }
 
 /*
@@ -54,20 +78,18 @@
 
 .folder
 {
-    background-color: #ffe791;
-    border: none;
+    background-color: #f3f6f6;
+    border: 1px solid #dadddd;
+    border-radius: 5px;
     color: #333333;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 2px;
 }
 
 /* smaller texts */

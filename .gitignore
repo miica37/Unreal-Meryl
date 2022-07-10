@@ -7,4 +7,5 @@ Makefile
 *.sublime-workspace
 *.lnk
 *.psd
+*.png
 eyes-color*.png

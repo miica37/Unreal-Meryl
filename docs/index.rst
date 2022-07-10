@@ -21,15 +21,17 @@ Meryl
    :caption: Topics
 
    meshes.rst
+   blueprints.rst
    materials.rst
+   textures.rst
    blendshapes.rst
    animations.rst
-   blueprints.rst
    dynamics.rst
+   performance.rst
    als.rst
 
 
-Some notes about the character Meryl on Unreal Engine Marketplace.
+Welcome to the documentation of Meryl, these are some notes that will help you familiarize yourself with the character `Meryl on Unreal Engine Marketplace <https://www.unrealengine.com/marketplace/en-US/product/9ebdb29eac814352a69fd894cecf3b8e>`_.
 
 .. image:: /images/Meryl-cover.jpg
 	:align: center

@@ -3,15 +3,9 @@
 Meshes
 ###############################
 
-Modularity
-==========
-Meryl V2 is updated with a new outfit and 3 new hairstyle, this allows for more combinations to be made:
+.. role:: folder
 
-.. image:: /images/meshes/map-preview2.jpg
-	:align: center
-
-.. image:: /images/meshes/map-preview1.jpg
-	:align: center
+.. _lods:
 
 LODs
 ====
@@ -22,7 +16,11 @@ Staff (SM_Staff_A) still doesn't have any lod.
 In the demo scene (Meryl_Preview Map), if you choose between BP_Meryl1 or BP_Meryl2, you can press < 1 > to toggle between LOD0 and LOD1.
 
 .. note::
-	Creating LOD takes a lot of time so I am hoping to get some feedbacks from users to see which LOD they prefer. I would really appreciate if you could take some time to go into the `Discord server <https://discord.gg/WzspRd3QrG>`_ and vote on this subject.
+	Creating LOD takes a considerable amount of time, based on my :ref:`performance test <performance>`, the performance increase from lod is negligible.
+
+	As hardware continues to improve and Unreal Engine shifts to high end technologies like Lumen and Nanite, I believe creating LOD is slowly becoming a thing of the past.
+
+	With that said, I will remove LOD in the future updates, do let me know (miicaneo@gmail.com) if you have other considerations.
 
 Polycount
 =========
@@ -94,58 +92,101 @@ Polycount
 
 |
 
+.. _meshes_overview:
+
 Meshes Overview
 ===============
 
 SK_Meryl1 and SK_Meryl2
 -----------------------
 
-.. image:: /images/content-thumbnails/SK_Meryl.jpg
+.. image:: /images/SK_Meryl.jpg
 	:align: center
 
-These are the precombined mesh, Meryl1 is wearing the first outfit while Meryl2 is wearing the new outfit.
-The '1b' and '1c' are versions that has different material setups.
+These are the precombined mesh, :guilabel:`Meryl1` is the first design while :guilabel:`Meryl2` is having the new outfit.
 
-1
-^
-There are 13 material slots in this mesh. As you can see it's quite a lot of materials, and this will results in many draw calls.
+The :guilabel:`b` and :guilabel:`c` are variations that have reduced material slots and the material setup to use < M_Meryl_Clothes_Master > (:ref:`link <clothes_master>`).
+
+Meryl 1
+^^^^^^^
+
+There are 13 material slots in this mesh. As you can see it's quite a lot of materials, and this can have an impact on performance.
 
 .. image:: /images/meshes/meryl1-material-slots.jpg
 	:align: center
 
-1b
-^^
-The material slots is reduced to 8. This mesh is using the master clothes material which combines multiple material into one, the idea is to reduce material draw calls and you can read more about it here. The hair and skirt is not using the master clothes material (MI_Meryl_Clothes1) because they will need the material slots for clothing simulations.
+|
+
+Meryl 1b
+^^^^^^^^
+
+The amount of material slots is reduced to 8. This skeletal mesh is using a master clothes material which combines multiple materials, so we can use the same material for the top, leggings, boots and hat.
+
+For hair and skirt, they will still be occupying 4 material slots (one for the primary mesh and one for proxy mesh for each) because for clothing simulations, material slots are used to select the clothing.
+
 
 .. image:: /images/meshes/meryl1b-material-slots.jpg
 	:align: center
 
+|
 
-1c
-^^
-The material slots is reduced to 4. This is the minimum amount of material slots that you are able to reduce to. With this setup, there's will be no cloth simulations.
+.. image:: /images/meshes/meryl1b-clothing-slots.jpg
+	:align: center
+
+|
+
+Meryl 1c
+^^^^^^^^
+
+The amount of material slots is reduced to 4. This is the minimum amount of material slots that you are able to reduce (unless you want to remove the eyes shadow too which doesn't look too good closeup). With this setup, we will have to give up cloth simulations.
 
 .. image:: /images/meshes/meryl1c-material-slots.jpg
 	:align: center
 
 .. note::
-    A note on the eyes for 1c, it seems at first that I could merge the eyes into the master clothes material to reduce one more material slot, but somehow the eyes turns black when I did this, so I have to separate the eyes out.
+    A note on the eyes for 1c, it seems at first that we can also merge the eyes into the master clothes material to reduce one more material slot, but somehow the eyes turned black when I did this, so I had to separate the eyes out.
 
     .. image:: /images/meshes/black-eyes.jpg
 	    :align: center
 
 |
+|
 
 Body and Clothes Parts
 ----------------------
-You can mix and match the clothes parts inside the Blueprint.
 
 .. image:: /images/meshes/meshes-thumbnails.jpg
 	:align: center
 
+|
+
+To customize the look, you can use these mesh parts and mix and match them inside the Blueprint.
+
+You can take a look at :guilabel:`BP_Meryl_Modular` in the :folder:`Blueprints` folder to see how it's setup, which you can also learn more about in the UE's Documentation: `Working with Modular Characters <https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/WorkingwithModularCharacters/>`_
+
+|
+
 .. image:: /images/meshes/blueprint-outline.jpg
 	:align: center
 
+|
+|
+
+.. _clothes:
+
+Clothing Simulation
+===================
+
+The Hairs and Skirts are setup to work with clothing simulation using proxy meshes, which means there is a separate mesh that has a lower mesh resolution that is driving the primary mesh.
+
+The proxy mesh has "proxy" in its name. :guilabel:`Hair1`'s (the primary mesh) proxy is :guilabel:`Hair1_Proxy`.
+
+In the LOD section, you can find that the proxy mesh is set to disabled (but when you Activate Cloth Paint, you will be painting on the proxy mesh):
+
+.. image:: /images/meshes/clothing-material-slot.jpg
+	:align: center
+
+|
 |
 
 About the Design
@@ -154,7 +195,7 @@ About the Design
 Non-Spherical Eyes
 ------------------
 
-Note that the eyes (and eyes shadow) is oval in shape.
+Just a note that the eyes (and eyes shadow) is oval in shape.
 
 .. image:: /images/non-spherical-eyes-01.jpg
 	:align: center
@@ -170,3 +211,5 @@ Eyes motion is driven through morph targets (instead of bones).
 
 .. image:: /images/blendshapes-driven-eye-motion.jpg
 	:align: center
+
+|

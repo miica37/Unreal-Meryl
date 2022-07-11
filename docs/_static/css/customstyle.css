@@ -70,6 +70,10 @@ kbd {
 	box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),inset 0 0 0 2px #fff;
 }
 
+.strike {
+    text-decoration: line-through;
+}
+
 /*
    For Characters Documentation
 */

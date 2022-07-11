@@ -1,4 +1,6 @@
 
+.. role:: folder
+
 Modularity
 ==========
 
@@ -87,7 +89,7 @@ One of the issues one might face when exporting fbx out from UE and bringing it 
 
 You can use `Fbx Converter <https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives>`_ from Autodesk (`as pointed out by TheBasti82 in this Unreal Engine forum thread <https://forums.unrealengine.com/t/export-shape-keys-morph-targets-from-ue4-to-blender-workaround/133040>`_) to convert the fbx files (from UE) before importing them into Blender to solve the issue.
 
-The original fbx files (that I use to bring mesh and skeleton into UE) will be provided on request and it will also solve the above issue.
+You can find the original fbx files (that I use to bring mesh and skeleton into UE) in the folder :folder:`Content ➧ Meryl ➧ Fbx`. The content appears to be empty in the Unreal Engine's Content Browser but if you do "Show in Explorer", you will see the those fbx files. The fbx files can be used to solve the Blender's issue above.
 
 |
 |
@@ -100,7 +102,8 @@ Unreal Engine 5
 
 Meryl has been tested briefly on UE5 and seems to be working fine. However I was working mostly on UE 4.22 so if there are any issues with other UE versions, please report back and I will try to fix them ASAP.
 
-One thing I noticed when opening the preview map in UE5 (and also UE4.27) is it looks much brighter than the same map in UE4. The exposure compensation setting for PostProcessVolume has reverted back to 1.0, so turning it back to 0.0 should line up the looks with UE 4.22. 
+UE4 to UE5 Converted Projects:
+    One thing I noticed when opening the preview map in UE5 (and also UE4.27) is it looks much brighter than the same map in UE4. The exposure compensation setting for PostProcessVolume has reverted back to 1.0, so turning it back to 0.0 should line up the looks with UE 4.22. 
 
 .. image:: /images/ue5/ue5-after.jpg
     :align: center

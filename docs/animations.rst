@@ -5,6 +5,9 @@ Animations
 
 .. role:: folder
 
+.. role:: strike
+    :class: strike
+
 Locations
 =========
 
@@ -72,7 +75,9 @@ Step2:
 Unreal Engine 5
 ---------------
 
-UE5 has a different workflow for retargeting. First an IK Rig needs to be created for the character but don't worry I have already setup and prepared the IK Rig which you can get at `this link <http://link>`_.
+UE5 has a different workflow for retargeting. First an IK Rig needs to be created for the character but don't worry I have already setup and prepared the IK Rig which is under :folder:`Meryl ➧ Meshes` (< IK_Meryl >)
+
+
 
 .. note::
 	Step by Step Video at Youtube:
@@ -82,7 +87,7 @@ UE5 has a different workflow for retargeting. First an IK Rig needs to be create
 Create IK Retargeter
 ^^^^^^^^^^^^^^^^^^^^
 
-   #. Copy both < IK_Meryl > and < SK_Meryl2_UE5 > to folder :folder:`Meryl ➧ Meshes`
+   #. :strike:`Copy both IK_Meryl and SK_Meryl2_UE5 to folder Meryl ➧ Meshes` ( < IK_Meryl > and < SK_Meryl2_UE5 > is inside folder :folder:`Meryl ➧ Meshes` so there's no need to copy anything)
 
       .. image:: /images/animations/retarget-ue5-copy-asset.jpg
 		:align: center

@@ -9,7 +9,7 @@ Updates Log
 
 .. _updates_v2:
 
-2.0 (??/07/2022)
+2.0 (11/07/2022)
 --------------------
 
 Meshes:
@@ -66,8 +66,14 @@ Dynamics:
    *  Renamed < SK_Meryl_EXB_Bottoms > to < SK_Meryl_Skirt1_Dynamic >
 
 Textures:
-   * Added *Master* Textures to be used just for the Master Materials (under folder :folder:`Meryl\\Textures\\Master` : < T_Master_D >, < T_Master_MRAO >, < T_Master_N >, < T_Master_RGB >)
+   * Added *Master* Textures to be used just for the Master Materials (in the folder :folder:`Meryl\\Textures\\Master` : < T_Master_D >, < T_Master_MRAO >, < T_Master_N >, < T_Master_RGB >)
    *  Fixed Body normal map textures (seams on Neck area)
+
+Fbx:
+   * Added Fbx files (in the folder :folder:`Meryl\\Fbx`)
+
+Unreal Engine 5:
+   * Added IK Rig for retargeting in UE5 (in the folder :folder:`Meryl\\Meshes` < IK_Meryl > )
 
 Documentation:
    * More efforts on documentation and updated to reflect new changes
